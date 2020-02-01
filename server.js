@@ -6,8 +6,10 @@ let jsonParser = bodyParser.json();
 var path = require("path");
 
 //app.use(bodyParser.urlencoded({extended : true}));
+console.log("simon")
 
 app.use(express.static(path.join(__dirname, "/public")));
+console.log("simon2")
 
 // set the view engine to ejs
 app.set("view engine", "ejs");
